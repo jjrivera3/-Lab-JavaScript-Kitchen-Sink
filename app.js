@@ -1,4 +1,3 @@
-
 // 3. Create a variable that contains your name as a value. Name the variable appropriately.
 var name = 'Joseph';
 
@@ -29,6 +28,8 @@ sayHello();
 function checkAge(name, age){
     if(age < 21){
         alert('Sorry ' + name + ' you aren\'t old enough to view this page!');
+    } else{
+      alert('You may proceed ' + name + '!');
     }
 }
 
@@ -61,7 +62,7 @@ function checkAge(name, age){
 // 14. Create an array of 5 objects that contain name and age properties. Make up names and ages for each object, making sure some are younger than 21 and some are 21+.
 var arr= [
     {
-        name: 'Joseph', 
+        name: 'Joseph',
         age: 25
     },
     {
@@ -97,5 +98,14 @@ for(let i = 0; i < 10; i++){
 
 
 
+function getLength(word){
+  return word.length;
+}
 
+var lengthResult = getLength('Hello world');
 
+if(lengthResult % 2 == 0){
+  console.log('The world is nice and even!');
+} else{
+  console.log('The world is an odd place!');
+}
